@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  background-color: orange;
+}
+.header-title {
+  height: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: #d3d3d3;
+  font-size: 30px;
+}
+
+.main-container {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 85%;
+  background-color: white;
+}
+
+.left-container {
+  display: list-item;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  background-color: rgb(156, 12, 12);
+}
+
+.menu {
+  list-style: none;
+}
+
+.head-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  background-color: rgb(156, 12, 12);
+}
+
+.right-container {
+  width: 80%;
+  height: 100%;
+  background-color: cyan;
+}
+
+.first-line {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+}
+
+.first-line div {
+  box-sizing: border-box;
+}
+
+.second-line div {
+  box-sizing: border-box;
+}
+
+.second-line {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+}
+
+.first-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  border-style: groove;
+  width: 50%;
+  height: 100%;
+  background-color: #dcdcdc;
+}
+
+.second-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  border-style: groove;
+  width: 50%;
+  height: 100%;
+  background-color: #dcdcdc;
+}
+
+.third-square {
+  display: flex;
+  border-radius: 10%;
+  border-style: groove;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background-color: #dcdcdc;
+}
+
+.fourth-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  border-style: groove;
+  width: 50%;
+  height: 100%;
+  background-color: #dcdcdc;
+}
+
+.first-line :hover {
+  transform: scale(1.05);
+}
+
+.second-line :hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  height: 5%;
+  background-color: darkgray;
+}
