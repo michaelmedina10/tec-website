@@ -71,6 +71,64 @@ p {
   overflow-y: scroll;
 }
 
+.hamburguer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 10%;
+  height: 100%;
+  display: none;
+}
+
+#check-menu {
+  position: absolute;
+  opacity: 0;
+}
+
+.label-hamburguer {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+
+.label-hamburguer span {
+  position: absolute;
+  display: block;
+  height: 3px;
+  margin: 5px;
+  width: 100%;
+  border-radius: 30%;
+  background-color: black;
+  transition: 0.25s ease-in-out;
+}
+
+.label-hamburguer span:nth-child(1) {
+  top: 0;
+}
+
+.label-hamburguer span:nth-child(2) {
+  top: 8px;
+}
+
+.label-hamburguer span:nth-child(3) {
+  top: 16px;
+}
+
+#check-menu:checked + .label-hamburguer span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#check-menu:checked + .label-hamburguer span:nth-child(2) {
+  opacity: 0;
+}
+
+#check-menu:checked + .label-hamburguer span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 8px;
+}
 .header {
   display: flex;
   justify-content: end;
@@ -124,6 +182,14 @@ p {
     .left-container {
       display: none;
       transition: 2s;
+    }
+
+    .hamburguer-container {
+      display: block;
+    }
+
+    .header {
+      justify-content: space-between;
     }
   }
 }
