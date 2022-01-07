@@ -169,6 +169,12 @@ body {
   background-color: #dcdcdc;
 }
 
+.square img {
+  box-sizing: border-box;
+  flex-basis: 40%;
+  height: 80%;
+}
+
 .square:hover {
   transform: scale(1.03);
 }
